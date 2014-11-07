@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matrix Operations</title>
+	<link rel="stylesheet" style="text/css" href="matrix.css">
+</head>
+
+<body>
+<h1>Adding and Multiplying Matrices!</h1>
+<!-- 2 X 2 MATRICES -->
+
+
+<table> <!-- borderless table to keep matrices in-line -->
+<tr>
+	<td><h2>2 x 2 Matrices</h2></td>
+</tr>
+<tr>
+
+<form name="twoByTwo" target="frame" onsubmit="showMatrix1()">
+
+<td>
+	<table class="padding" id="m1">
+	<tr class="padding">
+	<td class="padding"><input type="text" size="3" id="a1"></td>
+	<td class="padding"><input type="text" size="3" id="b1"></td>
+	</tr>
+
+	<tr class="padding">
+	<td class="padding"><input type="text" size="3" id="c1"></td>
+	<td class="padding"><input type="text" size="3" id="d1"></td>
+	</tr>
+	</table><br/>
+</td>
+
+<td>
+	<div id="operation2by2"></div>
+</td>
+
+<td>
+
+	<table class="padding" id="m2">
+	<tr class="padding">
+		<td class="padding"><input type="text" size="3" id="a2"></td>
+		<td class="padding"><input type="text" size="3" id="b2"></td>
+	</tr>
+	<tr class="padding">
+		<td class="padding"><input type="text" size="3" id="c2"></td>
+		<td class="padding"><input type="text" size="3" id="d2"></td>
+	
+	</tr>
+
+	</table>
+
+</td>
+
+<td>
+	<button onclick="addMatrices2by2()">Add</button>
+	<button onclick="multiplyMatrices2by2()">Multiply</button>
+</td>
+</form>
+
+<td>
+	<div id="equals"><h1>=</h1></div>
+</td>
+
+<td>
+	<div id="answer" style="display:none">
+	
+	<table>
+	<tr>
+		<td class="padding" id="1"></td>
+		<td class="padding" id="2"></td>
+	</tr>
+
+	<tr>
+		<td class="padding" id="3"></td>
+		<td class="padding" id="4"></td>
+	</tr>
+
+	</table>
+
+	</div>
+</td>
+
+
+
+</tr>
+</table>
+
+
+<!-- 3 x 3 MATRICES -->
+
+<table>
+<tr><td><h2>3x3 Matrices</h2></td>
+</tr>
+
+<tr>
+<form name="threeByThree" target="frame" onsubmit="showMatrix2()">
+
+<td>
+	<table class="padding" id="m3" >
+	<tr>
+		<td class="padding"><input type="text" size="3" id="a01"></td>
+		<td class="padding"><input type="text" size="3" id="b01"></td>
+		<td class="padding"><input type="text" size="3" id="c01"></td>
+	</tr>
+
+	<tr>
+		<td class="padding"><input type="text" size="3" id="d01"></td>
+		<td class="padding"><input type="text" size="3" id="e01"></td>
+		<td class="padding"><input type="text" size="3" id="f01"></td>
+	</tr>
+
+	<tr>
+		<td class="padding"><input type="text" size="3" id="g01"></td>
+		<td class="padding"><input type="text" size="3" id="h01"></td>
+		<td class="padding"><input type="text" size="3" id="i01"></td>
+	</tr>
+
+</table><br/>
+
+</td>
+
+
+<td>
+	<div id="operation3by3"></div>
+</td>
+
+<td>
+	<table class="padding" id="m4" >
+	<tr>
+		<td class="padding"><input type="text" size="3" id="a02"></td>
+		<td class="padding"><input type="text" size="3" id="b02"></td>
+		<td class="padding"><input type="text" size="3" id="c02"></td>
+	</tr>
+
+	<tr>
+		<td class="padding"><input type="text" size="3" id="d02"></td>
+		<td class="padding"><input type="text" size="3" id="e02"></td>
+		<td class="padding"><input type="text" size="3" id="f02"></td>
+	</tr>
+
+	<tr>
+		<td class="padding"><input type="text" size="3" id="g02"></td>
+		<td class="padding"><input type="text" size="3" id="h02"></td>
+		<td class="padding"><input type="text" size="3" id="i02"></td>
+	</tr>
+
+	</table>
+</td>
+
+<td>
+	<button onclick="addMatrices3by3()">Add</button>
+	<button onclick="multiplyMatrices3by3()">Multiply</button>
+</td>
+</form>
+
+<td>
+	<div id="equals"><h1>=</h1></div>
+</td>
+
+<td>
+	<div id="answer2" style="display:none">
+	
+	<table>
+	<tr>
+		<td class="padding" id="one"></td>
+		<td class="padding" id="two"></td>
+		<td class="padding" id="three"></td>
+	</tr>
+
+	<tr>
+		<td class="padding" id="four"></td>
+		<td class="padding" id="five"></td>
+		<td class="padding" id="six"></td>
+	</tr>
+	
+	<tr>
+		<td class="padding" id="seven"></td>
+		<td class="padding" id="eight"></td>
+		<td class="padding" id="nine"></td>
+	</tr>
+
+	</table>
+
+	</div>
+
+</td>
+
+
+</tr>
+</table>
+
+
+
+<iframe name="frame" width="0" height="0" tabindex="-1" title="empty" class="hidden"></iframe> <!-- So that page doesn't refresh when forms are submitted -->
+
+<script src="matrix.js"></script>
+</body>
+
+</html>
